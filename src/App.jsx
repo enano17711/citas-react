@@ -1,9 +1,16 @@
+import Header from "./components/Header.jsx";
+import Formulario from "./components/Formulario.jsx";
+import ListadoPacientes from "./components/ListadoPacientes.jsx";
+
 function App() {
 
     return (
-        <div className="App">
-            hola mundo
-            <p>esto es un parrafo en react</p>
+        <div className='container mx-auto mt-20'>
+            <Header/>
+            <div className='mt-12 md:flex'>
+                <Formulario/>
+                <ListadoPacientes/>
+            </div>
         </div>
     )
 }
