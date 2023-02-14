@@ -1,65 +1,66 @@
 const Formulario = () => {
     return (
         <div className="md:w-1/2 lg:w-2/5">
-            <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
-            <p className="text-lg mt-5 text-center mb-10">
+            <h2 className="text-center text-3xl font-black">Seguimiento Pacientes</h2>
+            <p className="mt-5 mb-10 text-center text-xl">
                 Añade Pacientes y<span className="font-bold text-indigo-600"> Administralos</span>
             </p>
 
-            <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
+            <form className="mb-10 rounded-lg bg-white py-10 px-5 shadow-md">
                 <div className="mb-5">
-                    <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">
+                    <label htmlFor="mascota" className="block font-bold uppercase text-gray-700">
                         Nombre Mascota
                     </label>
                     <input
                         id="mascota"
-                        className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        className="mt-2 w-full rounded-md border-2 p-2 placeholder-gray-400"
                         type="text"
                         placeholder="Nombre de la mascota"
                     />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="propietario" className="block text-gray-700 uppercase font-bold">
+                    <label htmlFor="propietario" className="block font-bold uppercase text-gray-700">
                         Nombre Propietario
                     </label>
                     <input
                         id="propietario"
-                        className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        className="mt-2 w-full rounded-md border-2 p-2 placeholder-gray-400"
                         type="text"
                         placeholder="Nombre del propietario"
                     />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="email" className="block text-gray-700 uppercase font-bold">
+                    <label htmlFor="email" className="block font-bold uppercase text-gray-700">
                         Email
                     </label>
                     <input
                         id="email"
-                        className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        className="mt-2 w-full rounded-md border-2 p-2 placeholder-gray-400"
                         type="email"
                         placeholder="Correo Electrónico"
                     />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="alta" className="block text-gray-700 uppercase font-bold">
+                    <label htmlFor="alta" className="block font-bold uppercase text-gray-700">
                         Alta
                     </label>
-                    <input id="alta" className="border-2 w-full p-2 mt-2 rounded-md" type="date" />
+                    <input id="alta" className="mt-2 w-full rounded-md border-2 p-2" type="date" />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="síntomas" className="block text-gray-700 uppercase font-bold">
+                    <label htmlFor="síntomas" className="block font-bold uppercase text-gray-700">
                         Síntomas
                     </label>
                     <textarea
                         id="síntomas"
-                        className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        className="mt-2 w-full rounded-md border-2 p-2 placeholder-gray-400"
                         placeholder=" Describe los síntomas"
                     />
                 </div>
                 <input
                     type="submit"
-                    className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 
-                               cursor-pointer"
+                    className={
+                        "w-full cursor-pointer bg-indigo-600 p-3 font-bold uppercase text-white hover:bg-indigo-700"
+                    }
                     value="Agregar Paciente"
                 />
             </form>
